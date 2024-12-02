@@ -4,12 +4,12 @@ from selenium.webdriver.common.proxy import Proxy
 from selenium.webdriver.common.proxy import ProxyType
 import pandas as pd
 from time import sleep
-proxy = "PROXY_URL"
+# proxy = 'Opcional, retire os comentários das linhas 7 e 12'
 options = webdriver.ChromeOptions()
 options.add_argument(
 "user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
 "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36") 
-options.proxy = Proxy({ 'proxyType': ProxyType.MANUAL, 'httpProxy' : f'{proxy}'})
+# options.proxy = Proxy({ 'proxyType': ProxyType.MANUAL, 'httpProxy' : f'{proxy}'})
 options.add_argument("start-maximized")
 options.add_argument("--window-size=1920,1080")
 options.add_experimental_option("excludeSwitches", ["enable-automation"])
